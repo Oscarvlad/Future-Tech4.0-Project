@@ -1,0 +1,101 @@
+body {
+	box-sizing: border-box;
+	margin: 0px;
+	background-color: teal;
+}
+
+.topnav {
+	background-color: rgb(4, 41, 41);
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	color: white;
+	text-align: right;
+}
+
+a,
+.concat {
+	color: rgb(247, 243, 243);
+}
+
+.cont {
+	margin: 0px 50px;
+	margin-right: 80px;
+}
+
+.midnav {
+	/* border: 1px solid rgba(255, 255, 6, 0.829); */
+}
+
+.nav-ul {
+	list-style-type: none;
+	/* border: 1px solid rgba(255, 255, 6, 0.829); */
+	margin: 0px;
+	height: 80px;
+}
+
+li {
+	display: inline-block;
+	margin-top: 15px;
+}
+
+.l-img {
+	margin-top: 5px;
+	margin-right: 38%;
+	margin-left: 2%;
+	float: left;
+}
+
+.link {
+	display: block;
+	text-decoration: none;
+	padding: 5px;
+	margin: 10px;
+}
+
+.sales {
+	border: 1px solid whitesmoke;
+	padding: 8px;
+}
+
+.contact {
+	margin-right: 80px;
+}
+
+.midmain {
+	display: ;
+}
+
+.leftmain {
+	text-align: justify;
+	position: relative;
+	height: 450px;
+}
+.note {
+	margin: 0px 51px;
+	width: 40%;
+	border: 1px solid rgba(255, 255, 6, 0.829);
+}
+
+h3 {
+	font-weight: bold;
+	font-size: 50px;
+	color: whitesmoke;
+	margin: 9px;
+}
+
+p {
+	font-size: x-large;
+	margin: 9px;
+}
+
+.midimg {
+	margin-left: 0px;
+	margin-right: 0px;
+	width: 50%;
+	border: 1px solid rgba(255, 255, 6, 0.829);
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	height: 100%;
+}
