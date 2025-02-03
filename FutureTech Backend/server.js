@@ -90,8 +90,6 @@ app.delete('/api/products:id', async (req, res) => {
 
 
 //mongodb connection
-mongoose.connect("mongodb+srv://adminoscar:nodeapi009@futuretech.iqcnj.mongodb.net/Node-Api?retryWrites=true&w=majority&appName=FutureTech")
-	.then(() => {
 		console.log("connected to mongodb");
 		app.listen(port, () => {
 			console.log(`server running on ${port}`);
