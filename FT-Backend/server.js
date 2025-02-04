@@ -1,10 +1,11 @@
+require('dotenv').config()
 const express = require("express");
 const mongoose = require("mongoose");
 
 const Product = require("./models/Products");
 
 const app = express();
-const port = 5000;
+const port = process.env.PORT || 3000;
 
 // Middleware
 app.use(express.json());
@@ -89,12 +90,13 @@ app.delete('/api/products:id', async (req, res) => {
 
 
 //mongodb connection
-console.log("connected to mongodb");
-app.listen(port, () => {
-	console.log(`server running on ${port}`);
-});
+mongoose.connect(process.env.MONGO_URI)
+	.then(() => {
+		console.log("connected to mongodb");
+		app.listen(port, () => {
+			console.log(`server running on ${port}`);
+		});
 	})
-
-	.catch ((error) => {
-	console.error("Error connecting to MongoDB:", error);
-});
+	.catch((error) => {
+		console.error("Error connecting to MongoDB:", error);
+	});
